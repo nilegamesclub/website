@@ -11,21 +11,15 @@ window.onscroll = () =>{
     navbar.classList.remove('active');
 }
 
-var swiper = new Swiper(".home-slider", {
-    effect: "coverflow",
-    grabCursor: true,
-    centeredSlides: true,
-    slidesPerView: "auto",
-    loop: true,
-    coverflowEffect: {
-      rotate: 0,
-      stretch: 0,
-      depth: 100,
-      modifier: 2,
-      slideShadows: true,
-    },
-    autoplay: {
-        delay: 2000,
-        disableOnInteraction:false,
-    }
-  });
+const carousel = document.querySelector('.carousel');
+const slides = document.querySelectorAll('.carousel-slide');
+let currentSlide = 0;
+
+function nextSlide() {
+  slides[currentSlide].style.display = 'none';
+  currentSlide = (currentSlide + 1) % slides.length;
+  slides[currentSlide].style.display = 'block';
+
+}
+
+setInterval(nextSlide, 3000); // Change slide every 3 seconds (adjust as needed)
