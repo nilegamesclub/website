@@ -61,6 +61,10 @@ section{
 
 }
 
+.container p{
+    font-size: 2.3rem;
+}
+
 .header{
     position: fixed;
     top: 0; right: 0; left: 0;
@@ -118,25 +122,22 @@ section{
     text-transform: uppercase;
 }
 
-.home .home-slider .swiper-slide{
-    
-    border-radius: 0.5rem;
-    height: 100%;
-    width: 60%;
-}
-
-.home .home-slider .swiper-slide img{
-    height: 100%;
+.carousel-container {
+    overflow: hidden;
     width: 100%;
-    object-fit: cover;
+    position: relative;
+    text-align: center;
 }
-
-.home .swiper-container {
-    width: 68vw;
-    height: 60vh;
-    
+  
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
 }
-
+  
+.carousel-slide {
+    flex: 0 0 100%; 
+}
+  
 .heading{
     text-align: center;
     padding-bottom: 2rem;
@@ -148,24 +149,6 @@ section{
 .heading span{
     color: var(--main-color);
     text-transform: uppercase;
-}
-
-.price .box-container .box ul{
-    list-style-type: none;
-    padding: 1rem 0;
-}
-
-.price .box-container .box ul li{
-    font-size: 1.5rem;
-    color: #eee;
-    padding: 1rem 0;
-    text-align:justify;
-    padding-left: 5rem;
-}
-
-.price .box-container .box ul li i{
-    color: var(--main-color);
-    padding-right: 0.5rem;
 }
 
 
@@ -228,9 +211,7 @@ iframe{
     color: #fff;
 }
 
-.container p{
-    font-size: 2.3rem;
-}
+
 
 
 
