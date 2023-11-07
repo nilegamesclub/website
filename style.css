@@ -278,6 +278,14 @@ iframe{
     .home .content h3{
         font-size: 4rem;
     }
+
+    .googleCalendar iframe{
+        height: 350px;
+      }
+    
+      .googleCalendar{
+        padding-top: 100px;
+      }
 }
 
 
