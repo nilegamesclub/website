@@ -63,6 +63,7 @@ section{
 
 .container p{
     font-size: 2.3rem;
+    text-align: justify;
 }
 
 .header{
