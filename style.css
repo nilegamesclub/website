@@ -70,7 +70,7 @@ section{
     position: fixed;
     top: 0; right: 0; left: 0;
     z-index: 10000;
-    background: #333;
+    background: #B3A492;
     display: flex;
     align-items: center;
     justify-content: space-between;
